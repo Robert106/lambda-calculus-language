@@ -1,0 +1,33 @@
+-- Defines the columns
+col1 = problem !! 1;
+col2 = problem !! 2;
+-- Defines the values that will be taken from each column
+a = 1;
+b = 1;
+-- Loops through the column, outputting where appropriate
+for a to (length col1) {
+    if (a % 2) == 0 {
+        print (col1 !! a);
+        if (b <= length col1) {
+            print (col2 !! b);
+            b = b + 1;
+        } else {
+            continue;
+        };
+        if (b <= (length col1)) {
+            print (col2 !! b);
+            b = b + 1;
+            if (b <= (length col1)) {
+                print (col2 !! b);
+                b = b + 1;
+            }else {
+                continue;
+            };
+        }else {
+            continue;
+        };
+    }else {
+        print (col1 !! a);
+    };
+    a = a + 1;
+};

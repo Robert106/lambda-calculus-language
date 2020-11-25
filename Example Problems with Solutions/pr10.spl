@@ -1,0 +1,19 @@
+-- Defines the column
+col1 = problem;
+x=1;
+-- Loops through the stream and outputs the required values
+for x to (length col1) {
+    if (x == 1) {
+        a=(col1 !! 1);
+        print a;
+        old=a;
+        older=0;
+        temp=0;
+    } else {
+        print((old+older)+(col1 !! x));
+        temp=older;
+        older=old;
+        old=(old+temp)+(col1 !! x);
+    };
+    x=x+1;
+};

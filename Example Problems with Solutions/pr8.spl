@@ -1,0 +1,18 @@
+-- Defines the column
+col1 = problem !! 1;
+col2 = problem !! 2;
+x=1;
+checksum=0;
+-- Loops through the stream and outputs the required values
+for x to (length col1) {
+    print (col1 !! x);
+    print (col2 !! x);
+    checksum=checksum + ((col1 !! x) - (col2 !! x));
+    if (x % 5) == 0 {
+        print checksum;
+        checksum=0;
+    } else {
+        continue;
+    };
+    x=x+1;
+};

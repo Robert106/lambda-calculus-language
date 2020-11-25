@@ -1,0 +1,17 @@
+-- Defines the columns from the problem file
+col1 = problem !! 1;
+col2 = problem !! 2;
+col3 = problem !! 3;
+x=1;
+y=1;
+-- Loops through the length of the stream, outputs as asked
+for x to (length col1) {
+    print (col3 !! x);
+    print (col2 !! x);
+    print (col1 !! x);
+    y=((col1 !! x)+(col2 !! x));
+    print y;
+    z=((col2 !! x)+(col3 !! x));
+    print z;
+    x=x+1;
+};

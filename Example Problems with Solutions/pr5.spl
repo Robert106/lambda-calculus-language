@@ -1,0 +1,10 @@
+-- Defines the column from the problem file
+col1 = problem;
+x=1;
+total = 0;
+-- Outputs the total with each individual number added as it loops
+for x to (length col1) {
+	total = total + (col1 !! x);
+	print total;
+	x=x+1;
+};

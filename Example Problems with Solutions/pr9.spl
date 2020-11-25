@@ -1,0 +1,9 @@
+-- Defines the column
+col1 = problem;
+x=1;
+-- Loops through the stream and outputs the required values
+for x to (length col1) {
+    print (col1 !! x);
+    print x;
+    x=x+1;
+};

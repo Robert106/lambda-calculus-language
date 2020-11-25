@@ -1,0 +1,14 @@
+-- Defines the column from the problem file
+col1 = problem;
+x=1;
+y=2;
+z=3;
+-- Loops through the length of the stream, outputting as necessary
+for z to (length col1) {
+    print (col1 !! z);
+    print (2*(col1 !! y));
+    print ((3*(col1 !! x))-1);
+    z=z+3;
+    y=z-1;
+    x=y-1;
+};

@@ -1,0 +1,17 @@
+-- Defines the column
+col1 = problem;
+-- defines the values where x is the counter of how many loops and y is the value being got
+x=1;
+y=3;
+-- Loops through the stream and outputs the required values
+for y to (length col1) {
+    if (x % 2) == 0 {
+        print (col1 !! y);
+        y=y+3;
+        
+    }else {
+        print (col1 !! y);
+        y=y+4;
+    };
+    x=x+1;
+};
